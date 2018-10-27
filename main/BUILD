@@ -20,6 +20,7 @@ cc_binary(
     linkopts = ["-L" + VULKAN_PATH + "lib"] + GLFW_LINKOPTS,
     deps = [
         "//third_party/vulkan-sdk",
+        "@absl//absl/types:optional",
     ],
 )
 
