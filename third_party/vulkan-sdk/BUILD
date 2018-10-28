@@ -5,4 +5,7 @@ cc_library(
     name = "vulkan-sdk",
     hdrs = glob(["include/vulkan/*.h"]),
     visibility = ["//visibility:public"],
+    strip_include_prefix = "include",
 )
+
+exports_files(["bin/glslangValidator"])
